@@ -2,16 +2,14 @@ package com.mvcproject.model;
 
 import java.util.ArrayList;
 import java.util.Date;
-
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-import org.hibernate.validator.constraints.NotEmpty;
-
+/**
+ * Contains all the student data 
+ */
 public class Student {
-
-	
 	 @Pattern(regexp="[^0-9]*")
 	 @NotEmpty
 	 private String studentName;
